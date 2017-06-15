@@ -1,0 +1,461 @@
+@font-face {
+  font-family: 'CorkiTuscan';
+  src: url("../fonts/CorkiTuscan/Corki-Tuscan.eot");
+  src: url("../fonts/CorkiTuscan/Corki-Tuscan.eot?#iefix") format("embedded-opentype"), url("../fonts/CorkiTuscan/Corki-Tuscan.woff2") format("woff2"), url("../fonts/CorkiTuscan/Corki-Tuscan.woff") format("woff"), url("../fonts/CorkiTuscan/Corki-Tuscan.ttf") format("truetype"), url("../fonts/CorkiTuscan/Corki-Tuscan.svg#Corki-Tuscan") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'PFDinTextCompPro';
+  src: url("../fonts/PFDinTextCompPro/PFDinTextCompPro-Regular.eot");
+  src: url("../fonts/PFDinTextCompPro/PFDinTextCompPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/PFDinTextCompPro/PFDinTextCompPro-Regular.woff2") format("woff2"), url("../fonts/PFDinTextCompPro/PFDinTextCompPro-Regular.woff") format("woff"), url("../fonts/PFDinTextCompPro/PFDinTextCompPro-Regular.ttf") format("truetype"), url("../fonts/PFDinTextCompPro/PFDinTextCompPro-Regular.svg#PFDinTextCompPro-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'StampborGrungeRussian';
+  src: url("../fonts/StampborGrungeRussian/StampborGrungeRussian.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'BebasNeue';
+  src: url("../fonts/BebasNeue/BebasNeueRegular.eot");
+  src: url("../fonts/BebasNeue/BebasNeueRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue/BebasNeueRegular.woff2") format("woff2"), url("../fonts/BebasNeue/BebasNeueRegular.woff") format("woff"), url("../fonts/BebasNeue/BebasNeueRegular.ttf") format("truetype"), url("../fonts/BebasNeue/BebasNeueRegular.svg#BebasNeueRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'BebasNeue';
+  src: url("../fonts/BebasNeue/BebasNeueBold.eot");
+  src: url("../fonts/BebasNeue/BebasNeueBold.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue/BebasNeueBold.woff2") format("woff2"), url("../fonts/BebasNeue/BebasNeueBold.woff") format("woff"), url("../fonts/BebasNeue/BebasNeueBold.ttf") format("truetype"), url("../fonts/BebasNeue/BebasNeueBold.svg#BebasNeueBold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+.color-red {
+  color: #eb1f15; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  *:before, *:after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+body {
+  font-family: 'PFDinTextCompPro', Arial, Helvetica, sans-serif;
+  position: relative;
+  line-height: 1.5;
+  min-width: 320px; }
+
+.wrapper {
+  background-image: url("../img/main-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh; }
+  @media only screen and (max-width: 768px) {
+    .wrapper {
+      background-position: left center; } }
+
+.content__container {
+  height: 100%; }
+
+.content__logo-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 20px 20% 0 0; }
+  @media only screen and (max-width: 768px) {
+    .content__logo-wrap {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding: 10px 0 0; } }
+
+.content__logo-img {
+  max-width: 270px; }
+  @media only screen and (max-width: 1024px) {
+    .content__logo-img {
+      max-width: 200px; } }
+  @media only screen and (max-width: 768px) {
+    .content__logo-img {
+      max-width: 120px; } }
+
+.content__main-slogan {
+  position: relative;
+  margin: -5% 0 40px 0; }
+  @media only screen and (max-width: 1024px) {
+    .content__main-slogan {
+      margin-bottom: 10px; } }
+  @media only screen and (max-width: 768px) {
+    .content__main-slogan {
+      margin: 0 0 10px 0; } }
+  @media only screen and (max-width: 400px) {
+    .content__main-slogan {
+      margin: 0; } }
+
+.content__main-slogan-img {
+  width: 100%; }
+
+.content__main-slogan-text {
+  color: white;
+  font-family: 'CorkiTuscan', Arial, Helvetica, sans-serif;
+  font-size: 72px;
+  text-transform: uppercase;
+  position: absolute; }
+  @media only screen and (max-width: 1024px) {
+    .content__main-slogan-text {
+      font-size: 46px; } }
+  .content__main-slogan-text_left {
+    -webkit-transform: rotate(4deg);
+        -ms-transform: rotate(4deg);
+            transform: rotate(4deg);
+    top: 8%;
+    left: 15%; }
+    @media only screen and (max-width: 1024px) {
+      .content__main-slogan-text_left {
+        top: 16%;
+        left: 19%; } }
+  .content__main-slogan-text_right {
+    -webkit-transform: rotate(-5deg);
+        -ms-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+    top: 30%;
+    right: 10%; }
+    @media only screen and (max-width: 1024px) {
+      .content__main-slogan-text_right {
+        top: 40%;
+        right: 15%; } }
+
+.content__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.content__col_left {
+  width: 45%; }
+  @media only screen and (max-width: 768px) {
+    .content__col_left {
+      display: none;
+      width: 40%; } }
+
+.content__col_right {
+  width: 55%; }
+  @media only screen and (max-width: 768px) {
+    .content__col_right {
+      width: 100%; } }
+
+.content__moto {
+  position: relative; }
+  @media only screen and (max-width: 1024px) {
+    .content__moto {
+      margin-top: 20%; } }
+  @media only screen and (max-width: 768px) {
+    .content__moto {
+      margin-top: 0;
+      width: 40%; } }
+  @media only screen and (max-width: 500px) {
+    .content__moto {
+      margin-top: 40px; } }
+  .content__moto_mobile {
+    display: none; }
+    @media only screen and (max-width: 768px) {
+      .content__moto_mobile {
+        display: block; } }
+
+@media only screen and (max-width: 1024px) {
+  .content__moto-img {
+    width: 100%;
+    max-width: 350px; } }
+
+@media only screen and (max-width: 500px) {
+  .content__moto-img {
+    -webkit-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
+            transform: scaleX(-1); } }
+
+.content__moto-text {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-family: 'CorkiTuscan', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  position: absolute; }
+  .content__moto-text span {
+    white-space: nowrap; }
+  .content__moto-text_top {
+    background-image: url("../img/moto-slogan2.png");
+    padding: 20px 40px 50px;
+    font-size: 43px;
+    top: 0;
+    left: -20%; }
+    @media only screen and (max-width: 1200px) {
+      .content__moto-text_top {
+        left: 0; } }
+    @media only screen and (max-width: 1024px) {
+      .content__moto-text_top {
+        padding: 20px 40px 40px;
+        font-size: 30px;
+        top: auto;
+        bottom: 95%; } }
+    @media only screen and (max-width: 768px) {
+      .content__moto-text_top {
+        padding: 15px 15px 30px;
+        font-size: 15px;
+        bottom: 90%;
+        left: -10px; } }
+  .content__moto-text_bottom {
+    background-image: url("../img/moto-slogan1.png");
+    color: #eb1f15;
+    font-size: 25px;
+    padding: 50px 40px 20px;
+    bottom: 30px;
+    left: 0; }
+    @media only screen and (max-width: 1024px) {
+      .content__moto-text_bottom {
+        font-size: 20px;
+        top: 70%;
+        bottom: auto; } }
+    @media only screen and (max-width: 768px) {
+      .content__moto-text_bottom {
+        padding: 30px 20px 10px;
+        font-size: 15px; } }
+    @media only screen and (max-width: 500px) {
+      .content__moto-text_bottom {
+        display: none; } }
+
+.content__list {
+  counter-reset: item;
+  margin-bottom: 30px; }
+  @media only screen and (max-width: 1024px) {
+    .content__list {
+      margin-bottom: 10px; } }
+
+.content__list-item {
+  counter-increment: item;
+  font-size: 21px;
+  text-transform: uppercase; }
+  @media only screen and (max-width: 1024px) {
+    .content__list-item {
+      font-size: 16px; } }
+  @media only screen and (max-width: 400px) {
+    .content__list-item {
+      font-size: 14px; } }
+  .content__list-item:before {
+    content: counter(item);
+    color: #d72c2a;
+    display: inline-block;
+    font-family: 'StampborGrungeRussian', Arial, Helvetica, sans-serif;
+    font-size: 42px;
+    line-height: 0.5;
+    margin-right: 5px; }
+    @media only screen and (max-width: 1024px) {
+      .content__list-item:before {
+        font-size: 32px; } }
+    @media only screen and (max-width: 400px) {
+      .content__list-item:before {
+        font-size: 22px; } }
+  .content__list-item:first-child:before {
+    margin-right: 13px; }
+
+.content__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media only screen and (max-width: 1024px) {
+    .content__buttons {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+
+.content__buttons-big {
+  color: #fcdb03;
+  display: inline-block;
+  position: relative;
+  font-family: 'BebasNeue', Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  font-weight: bold; }
+  @media only screen and (max-width: 400px) {
+    .content__buttons-big {
+      font-size: 20px;
+      margin-bottom: 20px; } }
+
+@media only screen and (max-width: 400px) {
+  .content__buttons-big-img {
+    max-width: 200px; } }
+
+.content__buttons-text {
+  line-height: 1;
+  padding: 10px 0 0 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; }
+
+.content__buttons-small {
+  border-bottom: 2px solid currentColor;
+  display: inline-block;
+  color: #eb1f15;
+  font-size: 23px;
+  font-family: 'BebasNeue', Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: -30px; }
+  @media only screen and (max-width: 768px) {
+    .content__buttons-small {
+      font-size: 18px; } }
+
+.content__tickets {
+  position: relative;
+  text-align: center; }
+  @media only screen and (max-width: 768px) {
+    .content__tickets {
+      display: inline-block;
+      width: 60%; } }
+  @media only screen and (max-width: 400px) {
+    .content__tickets {
+      margin-top: 20px; } }
+
+@media only screen and (max-width: 768px) {
+  .content__tickets-img {
+    width: 100%;
+    max-width: 350px; } }
+
+.content__tickets-slogan {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  font-family: 'CorkiTuscan', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  position: absolute; }
+  .content__tickets-slogan_left {
+    background-image: url("../img/tickets-slogan1.png");
+    color: #eb1f15;
+    font-size: 25px;
+    text-align: right;
+    padding: 50px 50px 30px;
+    bottom: -40px;
+    left: 12%; }
+    @media only screen and (max-width: 1024px) {
+      .content__tickets-slogan_left {
+        bottom: 0;
+        left: 0; } }
+    @media only screen and (max-width: 1024px) {
+      .content__tickets-slogan_left {
+        font-size: 18px; } }
+    @media only screen and (max-width: 768px) {
+      .content__tickets-slogan_left {
+        padding: 45px 35px 30px 25px;
+        font-size: 15px;
+        top: 60%;
+        bottom: auto; } }
+    @media only screen and (max-width: 400px) {
+      .content__tickets-slogan_left {
+        font-size: 12px;
+        top: 48%; } }
+    @media only screen and (max-width: 768px) {
+      .content__tickets-slogan_left br {
+        display: none; } }
+  .content__tickets-slogan_right {
+    background-image: url("../img/tickets-slogan2.png");
+    font-size: 15px;
+    font-family: 'PFDinTextCompPro', Arial, Helvetica, sans-serif;
+    right: -20px;
+    bottom: 50px;
+    padding: 60px 50px 30px;
+    text-align: center;
+    line-height: 1; }
+    @media only screen and (max-width: 1024px) {
+      .content__tickets-slogan_right {
+        font-size: 12px;
+        padding: 50px 30px 30px;
+        right: -20px;
+        top: -10px;
+        bottom: auto; } }
+    @media only screen and (max-width: 768px) {
+      .content__tickets-slogan_right {
+        padding: 40px 30px 15px; } }
+    @media only screen and (max-width: 400px) {
+      .content__tickets-slogan_right {
+        font-size: 12px;
+        right: -30px;
+        top: auto;
+        bottom: 70%; } }
+
+@media only screen and (max-width: 768px) {
+  .content__action {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; } }
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 1100px; }
+  @media only screen and (max-width: 768px) {
+    .container {
+      padding-left: 10px;
+      padding-right: 10px; } }
+
+.footer {
+  padding-bottom: 20px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 60px;
+  width: 100%; }
+  @media only screen and (max-width: 768px) {
+    .footer {
+      padding-bottom: 10px; } }
+  .footer__text {
+    color: #eb1f15;
+    font-family: 'PFDinTextCompPro', Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-align: center; }
+    @media only screen and (max-width: 768px) {
+      .footer__text {
+        font-size: 11px; } }
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor; }
+
+.icon-main-logo {
+  font-size: 18.86rem;
+  width: 6.91145em; }
+
+.icon-top-slogan {
+  font-size: 4.86rem;
+  width: 5.98354em; }
+
+/*# sourceMappingURL=main.css.map */

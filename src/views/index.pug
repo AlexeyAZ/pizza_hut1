@@ -1,0 +1,57 @@
+extends templates/layout
+
+block vars
+    - var title = 'Pizza Hut'
+
+block content
+    div.content
+        div.container.content__container
+            div.content__logo-wrap
+                a(href="")
+                    img(src="img/main-logo.svg", alt="").content__logo-img
+            div.content__main-slogan
+                img(src="img/main-slogan.png", alt="").content__main-slogan-img
+                //- p.content__main-slogan-text.content__main-slogan-text_left.
+                //-     Выигрывай
+                //- p.content__main-slogan-text.content__main-slogan-text_right.
+                //-     каждый день!
+            div.content__row
+                div.content__col.content__col_left
+                    div.content__moto
+                        img(src="img/moto.png", alt="").content__moto-img
+                        p.content__moto-text.content__moto-text_top.
+                            главный приз
+                        p.content__moto-text.content__moto-text_bottom
+                            span.
+                                культовый мотороллер
+                            <br>vespa
+                div.content__col.content__col_right
+                    div.content__list
+                        div.content__list-item.
+                            Заказывай доставку <span class="color-red">с 17 по 29 июня</span> и участвуй в розыгрыше призов!
+                        div.content__list-item.
+                            <span class="color-red">2 билета на Робби Уильямса </span> каждый будний день
+                        div.content__list-item.
+                            Главный приз – <span class="color-red">мотороллер Vespa Primavera</span>
+                    div.content__buttons
+                        a(href="https://spb.pizzahut.ru/menu/hot-pizza/" target="_blank").content__buttons-big
+                            img(src="img/arrow.png", alt="").content__buttons-big-img
+                            div.content__buttons-text.
+                                Заказать доставку<br> и принять участие
+                        a(href="doc/doc.pdf" target="_blank").content__buttons-small.
+                            Подробные правила акции
+                    div.content__action
+                        div.content__moto.content__moto_mobile
+                            img(src="img/moto.png", alt="").content__moto-img
+                            p.content__moto-text.content__moto-text_top.
+                                главный приз
+                            p.content__moto-text.content__moto-text_bottom
+                                span.
+                                    культовый мотороллер
+                                <br>vespa
+                        div.content__tickets
+                            img(src="img/tickets.png", alt="").content__tickets-img
+                            div.content__tickets-slogan.content__tickets-slogan_left.
+                                2 билета на Робби Уильямса<br> каждый будний день
+                            div.content__tickets-slogan.content__tickets-slogan_right.
+                                Следи за розыгрышем<br> на радио Рекорд

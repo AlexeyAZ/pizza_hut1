@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 20.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="290.8px" height="48.6px" viewBox="0 0 290.8 48.6" style="enable-background:new 0 0 290.8 48.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);fill:#C61724;}
+	.st1{clip-path:url(#SVGID_2_);fill:#A50C17;}
+	.st2{clip-path:url(#SVGID_2_);fill:#E12228;}
+</style>
+<g>
+	<defs>
+		<rect id="SVGID_1_" y="0" width="290.8" height="48.6"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<path class="st0" d="M281.5,36.1l9.3-12.6l-9.3-13.4c0,0-72.1,13.8-149.3,12.5v26C132.2,48.6,224.2,48.5,281.5,36.1"/>
+	<path class="st0" d="M40.5,40.5c0,0-8.3,2-20,2c-14.8,0-20.5-3-20.5-3l5.2-12.2L0,14c0,0,10.8,2,20.8,2c10.8,0,19.8-2,19.8-2V40.5z
+		"/>
+	<polygon class="st1" points="40.5,40.5 22.3,26 22.3,0.1 40.5,14 	"/>
+	<polygon class="st1" points="132,22.6 147.7,8.8 147.8,34.6 132,48.6 	"/>
+	<path class="st2" d="M22.3,26V0c0,0,48.6,10,125.7,8.7v26C148,34.7,79.5,38.3,22.3,26"/>
+</g>
+</svg>

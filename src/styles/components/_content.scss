@@ -1,0 +1,420 @@
+.content {
+
+	&__container {
+		height: 100%;
+	}
+
+	&__logo-wrap {
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-end;
+		padding: 20px 20% 0 0;
+
+		@include media(w768) {
+			justify-content: center;
+			padding: 10px 0 0;
+		}
+	}
+
+	&__logo-img {
+		max-width: 270px;
+
+		@include media(w1024) {
+			max-width: 200px;
+		}
+
+		@include media(w768) {
+			max-width: 120px;
+		}
+	}
+
+	&__main-slogan {
+		position: relative;
+		margin: -5% 0 40px 0;
+
+		@include media(w1024) {
+			margin-bottom: 10px;
+		}
+
+		@include media(w768) {
+			margin: 0 0 10px 0;
+		}
+
+		@include media(w400) {
+			margin: 0;
+		}
+	}
+
+	&__main-slogan-img {
+		width: 100%;
+	}
+
+	&__main-slogan-text {
+		color: white;
+		font-family: 'CorkiTuscan', Arial, Helvetica, sans-serif;
+		font-size: 72px;
+		text-transform: uppercase;
+		position: absolute;
+
+		@include media(w1024) {
+			font-size: 46px;
+		}
+
+		&_left {
+			transform: rotate(4deg);
+			top: 8%;
+			left: 15%;
+
+			@include media(w1024) {
+				top: 16%;
+				left: 19%;
+			}
+		}
+
+		&_right {
+			transform: rotate(-5deg);
+			top: 30%;
+			right: 10%;
+
+			@include media(w1024) {
+				top: 40%;
+				right: 15%;
+			}
+		}
+	}
+
+	&__row {
+		display: flex;
+	}
+
+	&__col {
+
+		&_left {
+			width: 45%;
+
+			@include media(w768) {
+				display: none;
+				width: 40%;
+			}
+		}
+
+		&_right {
+			width: 55%;
+
+			@include media(w768) {
+				width: 100%;
+			}
+		}
+	}
+
+	&__moto {
+		position: relative;
+
+		@include media(w1024) {
+			margin-top: 20%;
+		}
+
+		@include media(w768) {
+			margin-top: 0;
+			width: 40%;
+		}
+
+		@include media(w500) {
+			margin-top: 40px;
+		}
+
+		&_mobile {
+			display: none;
+
+			@include media(w768) {
+				display: block;
+			}
+		}
+	}
+
+	&__moto-img {
+
+		@include media(w1024) {
+			width: 100%;
+			max-width: 350px;
+		}
+
+		@include media(w500) {
+			transform: scaleX(-1);
+		}
+	}
+
+	&__moto-text {
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		font-family: 'CorkiTuscan', Arial, Helvetica, sans-serif;
+		text-transform: uppercase;
+		position: absolute;
+
+		span {
+			white-space: nowrap;
+		}
+
+		&_top {
+			background-image: url("../img/moto-slogan2.png");
+			padding: 20px 40px 50px;
+			font-size: 43px;
+			top: 0;
+			left: -20%;
+
+			@include media(w1200) {
+				left: 0;
+			}
+
+			@include media(w1024) {
+				padding: 20px 40px 40px;
+				font-size: 30px;
+				top: auto;
+				bottom: 95%;
+			}
+
+			@include media(w768) {
+				padding: 15px 15px 30px;
+				font-size: 15px;
+				bottom: 90%;
+				left: -10px;
+			}
+		}
+
+		&_bottom {
+			background-image: url("../img/moto-slogan1.png");
+			color: $main-red;
+			font-size: 25px;
+			padding: 50px 40px 20px;
+			bottom: 30px;
+			left: 0;
+
+			@include media(w1024) {
+				font-size: 20px;
+				top: 70%;
+				bottom: auto;
+			}
+
+			@include media(w768) {
+				padding: 30px 20px 10px;
+				font-size: 15px;
+			}
+
+			@include media(w500) {
+				display: none;
+			}
+		}
+	}
+
+	&__list {
+		counter-reset: item;
+		margin-bottom: 30px;
+
+		@include media(w1024) {
+			margin-bottom: 10px;
+		}
+	}
+
+	&__list-item {
+		counter-increment: item;
+		font-size: 21px;
+		text-transform: uppercase;
+
+		@include media(w1024) {
+			font-size: 16px;
+		}
+
+		@include media(w400) {
+			font-size: 14px;
+		}
+		
+		&:before {
+			content: counter(item);
+			color: #d72c2a;
+			display: inline-block;
+			font-family: 'StampborGrungeRussian', Arial, Helvetica, sans-serif;
+			font-size: 42px;
+			line-height: 0.5;
+			margin-right: 5px;
+
+			@include media(w1024) {
+				font-size: 32px;
+			}
+
+			@include media(w400) {
+				font-size: 22px;
+			}
+		}
+
+		&:first-child {
+
+			&:before {
+				margin-right: 13px;
+			}
+		}
+	}
+
+	&__buttons {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@include media(w1024) {
+			flex-direction: column;
+		}
+	}
+
+	&__buttons-big {
+		color: #fcdb03;
+		display: inline-block;
+		position: relative;
+		font-family: 'BebasNeue', Arial, Helvetica, sans-serif;
+		font-size: 35px;
+		font-weight: bold;
+
+		@include media(w400) {
+			font-size: 20px;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__buttons-big-img {
+
+		@include media(w400) {
+			max-width: 200px;
+		}
+	}
+
+	&__buttons-text {
+		line-height: 1;
+		padding: 10px 0 0 30px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+	}
+
+	&__buttons-small {
+		border-bottom: 2px solid currentColor;
+		display: inline-block;
+		color: $main-red;
+		font-size: 23px;
+		font-family: 'BebasNeue', Arial, Helvetica, sans-serif;
+		text-decoration: none;
+		text-transform: uppercase;
+		margin-top: -30px;
+
+		@include media(w768) {
+			font-size: 18px;
+		}
+	}
+
+	&__tickets {
+		position: relative;
+		text-align: center;
+
+		@include media(w768) {
+			display: inline-block;
+			width: 60%;
+		}
+
+		@include media(w400) {
+			margin-top: 20px;
+		}
+	}
+
+	&__tickets-img {
+
+		@include media(w768) {
+			width: 100%;
+			max-width: 350px;
+		}
+	}
+
+	&__tickets-slogan {
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		font-family: 'CorkiTuscan', Arial, Helvetica, sans-serif;
+		text-transform: uppercase;
+		position: absolute;
+
+		&_left {
+			background-image: url("../img/tickets-slogan1.png");
+			color: $main-red;
+			font-size: 25px;
+			text-align: right;
+			padding: 50px 50px 30px;
+			bottom: -40px;
+			left: 12%;
+
+			@include media(w1024) {
+				bottom: 0;
+				left: 0;
+			}
+
+			@include media(w1024) {
+				font-size: 18px;
+			}
+
+			@include media(w768) {
+				padding: 45px 35px 30px 25px;
+				font-size: 15px;
+				top: 60%;
+				bottom: auto;
+			}
+
+			@include media(w400) {
+				font-size: 12px;
+				top: 48%;
+			}
+
+			br {
+				@include media(w768) {
+					display: none;
+				}
+			}
+		}
+
+		&_right {
+			background-image: url("../img/tickets-slogan2.png");
+			font-size: 15px;
+			font-family: 'PFDinTextCompPro', Arial, Helvetica, sans-serif;
+			right: -20px;
+			bottom: 50px;
+			padding: 60px 50px 30px;
+			text-align: center;
+			line-height: 1;
+
+			@include media(w1024) {
+				font-size: 12px;
+				padding: 50px 30px 30px;
+				right: -20px;
+				top: -10px;
+				bottom: auto;
+			}
+
+			@include media(w768) {
+				padding: 40px 30px 15px;
+			}
+
+			@include media(w400) {
+				font-size: 12px;
+				right: -30px;
+				top: auto;
+				bottom: 70%;
+			}
+		}
+	}
+
+	&__action {
+
+		@include media(w768) {
+			display: flex;
+			align-items: flex-start;
+		}
+	}
+}

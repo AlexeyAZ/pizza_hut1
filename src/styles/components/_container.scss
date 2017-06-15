@@ -1,0 +1,12 @@
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 30px;
+	padding-right: 30px;
+	max-width: 1100px;
+
+	@include media(w768) {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}

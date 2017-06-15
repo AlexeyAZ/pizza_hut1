@@ -1,0 +1,24 @@
+.footer {
+	padding-bottom: 20px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: $footer-height;
+	width: 100%;
+
+	@include media(w768) {
+		padding-bottom: 10px;
+	}
+	
+	&__text {
+		color: $main-red;
+		font-family: 'PFDinTextCompPro', Arial, Helvetica, sans-serif;
+		font-size: 17px;
+		text-transform: uppercase;
+		text-align: center;
+
+		@include media(w768) {
+			font-size: 11px;
+		}
+	}
+}
