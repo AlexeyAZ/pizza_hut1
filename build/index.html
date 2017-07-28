@@ -11,7 +11,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="content">
+      <div class="content__top">
         <div class="container content__container">
           <div class="content__logo-wrap"><a href=""><img class="content__logo-img" src="img/main-logo.svg" alt=""></a></div>
           <div class="content__main-slogan"><img class="content__main-slogan-img" src="img/main-slogan.png" alt=""></div>
@@ -28,8 +28,8 @@
                 <div class="content__list-item"><span class="color-red">2 билета на Робби Уильямса </span> каждый будний день</div>
                 <div class="content__list-item">Главный приз — <span class="color-red">мотороллер Vespa Primavera</span></div>
               </div>
-              <div class="content__buttons"><a class="content__buttons-big" href="https://spb.pizzahut.ru/menu/hot-pizza/" target="_blank"><img class="content__buttons-big-img" src="img/arrow.png" alt="">
-                  <div class="content__buttons-text">Заказать доставку<br> и принять участие</div></a><a class="content__buttons-small" href="doc/doc.pdf" target="_blank">Подробные правила акции</a></div>
+              <div class="content__buttons"><a class="content__buttons-big" href="https://spb.pizzahut.ru/menu/hot-pizza/" target="_blank"><img class="content__buttons-big-img" src="img/arrow.png" alt=""><img class="content__buttons-hover" src="img/arrow.png" alt="">
+                  <div class="content__buttons-text">Заказать доставку<br> и принять участие</div></a><a class="content__buttons-small scroll" href="#rules" data-speed="500">Правила акции</a></div>
               <div class="content__action">
                 <div class="content__moto content__moto_mobile"><img class="content__moto-img" src="img/moto.png" alt="">
                   <p class="content__moto-text content__moto-text_top">главный приз</p>
@@ -44,11 +44,28 @@
           </div>
         </div>
       </div>
+      <div class="content__bottom" id="rules">
+        <div class="container">
+          <div class="content__rules">
+            <div class="content__rules-item"><span class="color-red">Хочешь билеты на концерт Робби Уильямса?</span>
+              Тогда заказывай пиццу в Pizza Hut и жди звонка на следующий день! С 19 по 29 июня каждый будний день с 17:00 до 18:00 в прямом эфире Радио Рекорд будут выбраны два участника вечернего баттла, среди всех заказавших пиццу от Pizza Hut. Одолей соперника и два билета на концерт Робби Уильямса твои!
+            </div>
+            <div class="content__rules-item"><span class="color-red">Хочешь сертификат на 1500 рублей в Pizza Hut?</span>
+              С 19 по 29 июня каждый будний день с 11:00 до 12:00 мы будем задавать вопрос в эфире Радио Рекорд, ответ на который нужно будет отправить SMS-сообщением на короткий номер. Если твой ответ окажется верным, с тобой свяжутся и пригласят принять участие в баттле в прямом эфире! Ответь на вопросы быстрее соперника и выиграй сертификат в Pizza Hut.
+            </div>
+            <div class="content__rules-item"><span class="color-red">30 июня среди всех победителей утренних и вечерних баттлов мы разыграем главный приз — мотороллер Vespa! </span>
+              Участники финального баттла за главный приз будут выбраны случайным образом в ходе прямой трансляции на официальной страничке Радио Рекорд.
+            </div>
+          </div>
+          <div class="ta-center content__rules-link-wrap"><a class="content__rules-link" href="doc/doc.pdf" target="_blank">Полные правила акции</a></div>
+        </div>
+      </div>
       <footer class="footer">
         <div class="container">
           <p class="footer__text">Организатор розыгрыша ООО «АмРест» ИНН/КПП 7825335145/780101001 ОГРН 1027809227050 Адрес 199004, Санкт-Петербург г, Средний В.о. пр-кт, дом № 36/40 www.pizzahut.ru</p>
         </div>
       </footer>
     </div>
+    <script src="scripts/app.js"></script>
   </body>
 </html>

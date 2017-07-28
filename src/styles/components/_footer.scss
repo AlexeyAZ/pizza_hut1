@@ -1,13 +1,14 @@
 .footer {
-	padding-bottom: 20px;
-	position: absolute;
+	display: flex;
+	align-items: center;
+	//position: absolute;
 	left: 0;
 	bottom: 0;
 	height: $footer-height;
 	width: 100%;
 
 	@include media(w768) {
-		padding-bottom: 10px;
+		
 	}
 	
 	&__text {

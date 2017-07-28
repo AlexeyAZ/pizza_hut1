@@ -4,17 +4,13 @@ block vars
     - var title = 'Pizza Hut'
 
 block content
-    div.content
+    div.content__top
         div.container.content__container
             div.content__logo-wrap
                 a(href="")
                     img(src="img/main-logo.svg", alt="").content__logo-img
             div.content__main-slogan
                 img(src="img/main-slogan.png", alt="").content__main-slogan-img
-                //- p.content__main-slogan-text.content__main-slogan-text_left.
-                //-     Выигрывай
-                //- p.content__main-slogan-text.content__main-slogan-text_right.
-                //-     каждый день!
             div.content__row
                 div.content__col.content__col_left
                     div.content__moto
@@ -36,10 +32,11 @@ block content
                     div.content__buttons
                         a(href="https://spb.pizzahut.ru/menu/hot-pizza/" target="_blank").content__buttons-big
                             img(src="img/arrow.png", alt="").content__buttons-big-img
+                            img(src="img/arrow.png", alt="").content__buttons-hover
                             div.content__buttons-text.
                                 Заказать доставку<br> и принять участие
-                        a(href="doc/doc.pdf" target="_blank").content__buttons-small.
-                            Подробные правила акции
+                        a(href="#rules" data-speed="500").content__buttons-small.scroll.
+                            Правила акции
                     div.content__action
                         div.content__moto.content__moto_mobile
                             img(src="img/moto.png", alt="").content__moto-img
@@ -55,3 +52,24 @@ block content
                                 2 билета на Робби Уильямса<br> каждый будний день
                             div.content__tickets-slogan.content__tickets-slogan_right.
                                 Следи за розыгрышем<br> на радио Рекорд
+    div#rules.content__bottom
+        div.container
+            div.content__rules
+                div.content__rules-item
+                    span.color-red.
+                        Хочешь билеты на концерт Робби Уильямса?
+                    |
+                    |Тогда заказывай пиццу в Pizza Hut и жди звонка на следующий день! С 19 по 29 июня каждый будний день с 17:00 до 18:00 в прямом эфире Радио Рекорд будут выбраны два участника вечернего баттла, среди всех заказавших пиццу от Pizza Hut. Одолей соперника и два билета на концерт Робби Уильямса твои!
+                div.content__rules-item
+                    span.color-red.
+                        Хочешь сертификат на 1500 рублей в Pizza Hut?
+                    |
+                    |С 19 по 29 июня каждый будний день с 11:00 до 12:00 мы будем задавать вопрос в эфире Радио Рекорд, ответ на который нужно будет отправить SMS-сообщением на короткий номер. Если твой ответ окажется верным, с тобой свяжутся и пригласят принять участие в баттле в прямом эфире! Ответь на вопросы быстрее соперника и выиграй сертификат в Pizza Hut.
+                div.content__rules-item
+                    span.color-red.
+                        30 июня среди всех победителей утренних и вечерних баттлов мы разыграем главный приз – мотороллер Vespa! 
+                    |
+                    |Участники финального баттла за главный приз будут выбраны случайным образом в ходе прямой трансляции на официальной страничке Радио Рекорд.
+            div.ta-center.content__rules-link-wrap
+                a(href="doc/doc.pdf" target="_blank").content__rules-link.
+                    Полные правила акции
